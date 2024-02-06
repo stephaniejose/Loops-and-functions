@@ -47,4 +47,45 @@ for(donkey in 1:length(shrek_quote)){
 #(d) shrek_quote = taking it from the shrek_quote dataframe 
 #(e) shrek_quote[donkey] = the words chosen from the "shrek_quote" and has been denoted as donkey 
 
+#SAVING OUTPUTS
+
+#a common requirement from a loop is to save your outputs
+#a way to do this is using an output vector
+output <- vector() # creates an empty vector that we can fill with values
+input <- c('red', 'yellow', 'green', 'blue', 'purple')
+for(i in 1:length(input)){
+  output[i] <- nchar(input[i]) #"nchar" counts how many characters are in each colour
+}
+print(output)
+
+words <- vector()
+input <- c("buzz","cross","broads","fore","")
+for(i in 1:length(input)){
+  words[i] <- paste(input[i], "words", sep="")}
+print(words)
+
+#CONDITIONAL STATEMENTS
+
+#when the conditional statement of i>5 (i>5 == TRUE!) is true it will print those that are true 
+numbers <- c(1, 4, 7, 33, 12.1, 180000,-20.5)
+for(i in numbers){
+  if(i > 5){
+    print(i)
+  }}
+
+numbers <- c(1, 4, 7, 33, 12.1, 180000,-20.5)
+for(i in numbers){
+  if(i < 5 & i %% 1 == 0){ #if you divide the number it should not have any remainders
+    print(paste(i, ' is less than five and an integer.', sep = ''))
+    }
+}
+
+#in the above code it will only print the values that are less than 5 and divisible by 1 to get a remainder of 0 (no decimal points)
+
+#paste() takes multiple elements from the multiple vectors and concatenates them into a single element
+
+
+nums <- c(11, 22, 33, -0.01, 25, 100000, 7.2, 0.3, -2000, 20, 17, -11, 0)
+
+
 
