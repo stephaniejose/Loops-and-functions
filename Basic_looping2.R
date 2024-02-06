@@ -65,6 +65,7 @@ for(i in 1:length(input)){
 print(words)
 
 #CONDITIONAL STATEMENTS
+#USING IF
 
 #when the conditional statement of i>5 (i>5 == TRUE!) is true it will print those that are true 
 numbers <- c(1, 4, 7, 33, 12.1, 180000,-20.5)
@@ -86,6 +87,44 @@ for(i in numbers){
 
 
 nums <- c(11, 22, 33, -0.01, 25, 100000, 7.2, 0.3, -2000, 20, 17, -11, 0)
+for(i in nums){
+  if(i>15 & i %% 2 == 0){ #any number divided by 2 will give a remainder of 0
+    print(paste(i, ' is greater than 5 and divisible by 2.', sep =''))
+  } else if(i < 5 & i %% 2 != 0){
+    print(paste(i, 'is not divisible 2', sep = ''))
+  } else if(i >= 5 & i %% 2 == 0){
+    print(paste(i, ' is not greater than or equal to 5'))
+  } 
+  else{
+    print(paste(i, ' is not greater than five or is not divisible by 2.', sep = ''))
+  }
+}
 
+#USING ELSE
+#This can be used to define what code to run if the conditional is FALSE 
+#This is used after the initial if() statement
 
+#example
+numbers <- c(1, 4, 7, 33, 12.1, 180000,-20.5)
+for(i in numbers){
+  if(i < 5 & i %% 1 == 0){
+    print(paste(i, ' is less than five and an integer.', sep = ''))
+  } else {
+    print(paste(i, ' is not less than five or is not an integer (or both!).', sep = ''))
+  }
+}
+
+#example - this is combining the else() and if() command in the form of else if()
+numbers <- c(1, 4, 7, 33, 12.1, 180000,-20.5)
+for(i in numbers){
+  if(i < 5 & i %% 1 == 0){
+    print(paste(i, ' is less than five and an integer.', sep = ''))
+  } else if(i < 5 & i %% 1 != 0){
+    print(paste(i, ' is not an integer.', sep = ''))
+  } else if(i >= 5 & i %% 1 == 0){
+    print(paste(i, ' is not less than five.', sep = ''))
+  } else {
+    print(paste(i, ' is not less than five and is not an integer.', sep = ''))
+  }
+}
 
