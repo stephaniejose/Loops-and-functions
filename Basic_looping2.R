@@ -128,3 +128,15 @@ for(i in numbers){
   }
 }
 
+##QUESTIONS 
+
+#(1) Make a for loop that iterates over the numeric vector c(1,1,3,5,8,13,21) and prints the square root of each of the numbers
+
+numbers1 <- c(1,1,3,5,8,13,21)
+for (i in numbers1){
+  sqrt_number <- sqrt(numbers1)
+}
+
+print(sqrt_number)
+
+
