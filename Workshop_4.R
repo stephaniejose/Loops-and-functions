@@ -61,11 +61,6 @@ powers(30) #900 #27000
 
 powers(5189) #26925721 #13971566269
 
-month <- function(x){
-  y <- grep = month.name, x = month 
-  return (y)
-}
-
 #this creates a function that converts the month into the position it is in the calender years 
 month_converter <- function(month){ #this assigns the function the name of month_converter, allowing it to be called later on in the code 
   months <- c('January','February','March', #the c function creates a vector named months which has all the months of the year 
