@@ -139,4 +139,16 @@ for (i in numbers1){
 
 print(sqrt_number)
 
+#(2) create a vector of a quote from your favourite film (each word should be a single element). Loop over the words and print all words that are 4,5 or 6 characters long, print 'no' instead when the words are <4 characters long and print 'harry potter' if they are more than 6 characters long
 
+film_quote <- c('I', 'like', 'sand')
+for (a in film_quote){
+  if(a == 4 | a == 5 | a == 6){
+    print(paste(a, ' is 4, 5 or 6 characters long', sep = ''))
+  } else if(a<4){
+    print(paste(a, ' no', sep = ''))
+  }
+  else{(a > 6)
+    print(paste(a, 'harry potter', sep = ''))
+  }
+}
